@@ -1,0 +1,103 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.transvision.linecharge.fragments.MainFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/submit_btn"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp16"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_issue_handler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_issue_handler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:hint="@string/issuehandler"
+                    android:inputType="textCapWords"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_line_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp4">
+
+                <EditText
+                    android:id="@+id/et_line_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/linenum"
+                    android:inputType="textCapWords"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_line_issue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp4">
+
+                <EditText
+                    android:id="@+id/et_line_issue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/lineissue"
+                    android:inputType="textCapWords"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_issue_desp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp4">
+
+                <EditText
+                    android:id="@+id/et_issue_desp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|start"
+                    android:hint="@string/lineissuedesp"
+                    android:inputType="textMultiLine"
+                    android:lines="4"
+                    android:maxLines="4"
+                    android:minLines="3"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/issue_pic"
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dp32"
+                android:layout_marginTop="@dimen/dp32"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/camera"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_twist"
+        android:text="@string/submit"
+        android:textSize="@dimen/sp18"
+        android:textStyle="bold"/>
+</RelativeLayout>

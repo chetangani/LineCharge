@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Line Charge</string>
+
+    <string name="signin">Sign In</string>
+    <string name="login">LOGIN</string>
+    <string name="login_id">Login ID</string>
+    <string name="login_pass">Password</string>
+    <string name="submit">SUBMIT</string>
+    <string name="linenum">Line Number</string>
+    <string name="lineissue">Line Issue</string>
+    <string name="lineissuedesp">Line Issue Description</string>
+    <string name="issuehandler">Issue Handler</string>
+    <string name="camera_not_support">Sorry! Your device doesn\'t support camera</string>
+    <string name="logout_menu">Logout</string>
+</resources>

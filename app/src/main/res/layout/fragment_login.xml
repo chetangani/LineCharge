@@ -1,0 +1,78 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.transvision.linecharge.fragments.LoginFragment">
+
+    <TextView
+        android:id="@+id/login_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp8"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textSize="@dimen/sp20"
+        android:textStyle="bold"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/login_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp8"
+        android:layout_marginRight="@dimen/dp8"
+        android:layout_marginTop="@dimen/dp16"
+        android:elevation="@dimen/dp4"
+        app:cardCornerRadius="@dimen/cardradius">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp8"
+                android:layout_marginRight="@dimen/dp8"
+                android:layout_marginTop="@dimen/dp8">
+
+                <EditText
+                    android:id="@+id/et_login_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/login_id"
+                    android:inputType="textCapWords"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp8"
+                android:layout_marginRight="@dimen/dp8"
+                android:layout_marginTop="@dimen/dp8"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/et_login_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/login_pass"
+                    android:inputType="textPassword"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp32"
+                android:background="@drawable/button_twist"
+                android:text="@string/signin"
+                android:textSize="@dimen/sp17"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
